@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+  </h1>
+</body>
+<script>
+ /*
+		// 1. Вводимо необхідні дані
+		let minOne = 1, maxTwo = 5
+		let userNumbOne = parseInt(prompt('Введіть перше ваше число від 1 до 5'))
+		// 2. Знаходимо результат
+		let numberRandom = minOne + Math.floor(Math.random() * (maxTwo - minOne + 1))
+		document.write(`Генератор чисел = ${numberRandom} <br>`)
+		// 3. Виводимо результат
+		if ((userNumbOne < minOne) || (maxTwo < userNumbOne))
+			document.write(`Ви ввели не правильне перше число <br>`)
+		else if (userNumbOne === numberRandom)
+			document.write(`Ви угадали перше число <br>`)
+		else if (userNumbOne !== numberRandom)
+			document.write(`Ви не угадали перше число<br>`)
+		// 2. Знаходимо результат
+		let userNumbTwo = parseInt(prompt('Введіть друге ваше число від 1 до 5'))
+		if ((userNumbTwo < minOne) || (maxTwo < userNumbTwo))
+			document.write(`Ви ввели не правильне друге число <br>`)
+		else if (userNumbTwo === numberRandom)
+			document.write(`Ви угадали друге число <br>`)
+		else if (userNumbTwo !== numberRandom)
+			document.write(`Ви не угадали друге число<br>`)*/
+	 
+//Ввoдимо дані
+let minNamb = 1
+let maxNamb = 5
+let userNumber1=parseInt(prompt('Введіть перше число від 1 до 5'))
+let userNumber2=parseInt(prompt('Введіть друге число від 1 до 5'))
+//Випадкове число
+let numberRandom = minNamb+Math.floor(Math.random()*(maxNamb-minNamb+1))
+document.write(`Випадкове число = ${numberRandom} <br>`)
+//Розвязання
+if ((userNumber1 < minNamb) || (maxNamb < userNumber1))
+			document.write(`<h1>Ви ввели не правильне перше число </h1><br>`)
+		else if (userNumber1 === numberRandom)
+			document.write(`<h1>Ви угадали перше число</h1> <br>`)
+		else (userNumber1 !== numberRandom)
+		document.write(`<h1>Ви не вгадали перше число</h1>`)
+    if ((userNumber2 < minNamb) || (maxNamb < userNumber2))
+			document.write(`<h1>Ви ввели не вірне друге число </h1><br>`)
+		else if (userNumber2 === numberRandom)
+			document.write(`<h1>Ви угадали друге число</h1> <br>`)
+		else (userNumber2 !== numberRandom)
+			document.write(`<h1>Ви не вадали друге число</h1><br>`)
+</script>
+</html>

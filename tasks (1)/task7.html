@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</h1>
+</body>
+<script>
+  let monthNamber = parseInt(prompt(`Введіть номер місяця`)) 
+  let sezon
+  if (monthNamber===12 || monthNamber<3)
+  document.write('Зима') 
+  else if(monthNamber>2 && monthNamber<6 )
+  document.write('Весна') 
+  else if(monthNamber>5 && monthNamber<9)
+  document.write('Літо') 
+  else if(monthNamber>9 && monthNamber<12)
+  document.write('Осінь')
+  else if(monthNamber>12 || monthNamber<1)
+  document.write(`Помилка, Введіть число від 1 до 12`)
+
+</script>
+</html>

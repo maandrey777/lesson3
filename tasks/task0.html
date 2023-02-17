@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <h1>Задача0/1</h1>
+  <table>
+    <tbody>
+      <td class="title">S1=a+12+b</td>
+      <td class="title">S2=a+b2a </td>
+      <td class="title">S3=3(a+b)c </td>
+      <td class="title">S4=sin⁡(a-b)</td>
+    </tbody>
+  </table>
+  <p>Обчислити значення виразу
+    1.	S1=a+12+b
+    2.	S2=a+b2a 
+    3.	S3=3(a+b)c 
+    4.	s4=sin(a-b)
+    </p>
+  <script>
+    let a = parseInt(prompt('Введіть число a', '0'))
+    let b = parseInt(prompt('Введіть число b', '0')) 
+    let c = parseInt(prompt('Введіть число с', '0'))
+    let s1 = a+12+b
+    let s2 =Math.sqrt(a+b)/2*a
+    let s3 =Math.cbrt((a+b)/c)
+    let s4 =Math.sin(a/-b)
+    document.write(`<h1>s1=${s1}</h1><br><h1>s2=${s2}</h1><br><h1>s3=${s3.toFixed(2)}</h1><br><h1>s4=${s4.toFixed(2)}</h1>`)
+  </script>
+</body>
+</html>

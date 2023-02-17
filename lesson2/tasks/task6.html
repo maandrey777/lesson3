@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Задача6</h1>
+  <p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+  <script>
+   let tovar1col = parseInt(prompt(`Введіть кількість першого товару`, "0"));
+   let tovar1cena = parseFloat(
+        prompt(`Введіть вартість першого товару`, "0")
+      );
+      let tovar2col = parseInt(prompt(`Введіть кількість другого товару`, "0"));
+      let tovar2cena = parseFloat(
+        prompt(`Введіть вартість другого товару`, "0")
+      );
+      let tovar3col = parseInt(prompt(`Введіть кількість третього товару`, "0"));
+      let tovar3cena = parseFloat(
+        prompt(`Введіть вартість третього товару`, "0")
+      );
+      
+
+      let zagtovar1 = tovar1col * tovar1cena;
+      let zagtovar2 = tovar2col * tovar2cena;
+      let zagtovar3 = tovar3col * tovar3cena;
+
+      let total = zagtovar1 + zagtovar2 + zagtovar3;
+
+      document.write(
+        `<h1>Чек</h1> <br> Перший товар к-сть ${tovar1col} ціна ${tovar1cena}/1 = ${zagtovar1} <br> 
+        Другий товар к-сть ${zagtovar2} ціна ${tovar2col}/1 = ${tovar2cena} <br> 
+        Третій товар к-сть ${zagtovar3} ціна ${tovar3col}/1 = ${tovar3cena} <br>
+        <h2>Загальна вартість ${total}</h2>`
+      );
+     
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+  </h1>
+  
+</body>
+<script>
+  //Описуємо умови
+  let age = parseInt(prompt('Введіть вік людини','0'))
+  // дитина від 0 до 7, школяр від 7 до 16 студент від 16 до 25 працівник від 25 до 65 від 65 до 100 пенсіонер від 100 вас не існує
+  if (age<=7)
+  document.write(`<br><h1>Це дитина  ${age}років</h1>`)
+  else if (age<=16)
+  document.write(`<br> <h1>Це школяр ${age}років</h1>`)
+  else if (age<=25)
+  document.write(`<br><h1> Це Студент ${age}років</h1>`)
+  else if (age<=65)
+  document.write(`<br> <h1>Це Працівник ${age}років</h1>`)
+  else if (age<=100)
+  document.write(`<br> <h1>Це Пенсіонер ${age}років</h1>`)
+  else if (age>100)
+  document.write(`<br><h1> Цієї людини немає ${age}років</h1>`)
+</script>
+</html>

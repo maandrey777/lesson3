@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+  </h1>
+</body>
+<script>
+		// Вводимо необхідні данні
+		let сategory = prompt('Введіть категорію водія', 'A або B або C').toUpperCase()
+		let total
+			//Знаходимо результат
+		if(сategory === 'A')
+		total = 'Мотоцикл'
+		else if(сategory === 'B')
+		total = 'Легковий автомобіль'
+		else if(сategory === 'C')
+		total = 'Вантажний автомобіль'
+		// Віводимо результат
+		document.write(`<h1>Ваш транспортний засіб : ${total}</h1>`)
+</script>
+</html>

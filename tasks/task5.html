@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Задача5</h1>
+  <p>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+  <script>
+  let colSeconds = parseFloat(prompt("Введіть кількість секунд", `0`));
+  const minutes = 60;
+  const hour = 3600;
+  let colMinutes = Math.floor(colSeconds / minutes);
+  let colHours = Math.floor(colSeconds / hour);
+  document.write(
+        `Від початку доби пройшло ${colHours} годин і ${colMinutes} хвилин`
+      );    
+  </script>
+</body>
+</html>
